@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sketchy/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/yeti/bootstrap.min.css"> -->
+    <title>MacManager</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fab fa-monero"></i>
+            Mac<span class="text-primary">Manager</span></h1>
+            <form id="app-form">
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="location">Address</label>
+                    <input type="text" id="location" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="date">Date Applied (mm/dd/yyyy)</label>
+                    <input type="text" id="date" class="form-control">
+                </div>
+                <input type="submit" value="Add Application" class="btn btn-success btn-block">
+            </form>
+            <table class="table table-striped mt-5">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Company Name</th>
+                        <th>Address</th>
+                        <th>Date Applied (mm/dd/yyyy)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="app-list"></tbody>
+
+            </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
